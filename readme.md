@@ -14,4 +14,4 @@ This batch script trims the last 3 minutes from all `.mp4` videos in the folder 
 
 ### Method 2
 
-The easiest way is to get the [batch-lossless-cut.zip](https://github.com/m1nuzz/batch-lossless-cut/releases/download/batch-lossless-cut/batch-lossless-cut.zip), extract the files into the folder with the videos you want to trim, and run `batch-lossless-cut.bat`.
+The easiest way is to get the [batch-lossless-cut.zip](https://github.com/m1nuzz/batch-lossless-cut/releases/download/batch-lossless-cut/batch-lossless-cut.zip) extract the files into the folder with the videos you want to trim, and run `batch-lossless-cut.bat`.
