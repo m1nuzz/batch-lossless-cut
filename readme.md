@@ -26,3 +26,8 @@ The easiest way is to download the [batch-lossless-cut.zip](https://github.com/m
 ## Requirements
 
 - [FFmpeg](https://ffmpeg.org/) must be installed or included in the same directory as the script, or it should be available in the system `PATH`.
+
+If you are using **Method 1**, you will need to download and install `ffmpeg` separately. You can either:
+
+1. Add `ffmpeg` to the same directory as the batch script.
+2. Or, add `ffmpeg` to your system’s `PATH` environment variable so it can be used globally.
