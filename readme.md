@@ -1,17 +1,28 @@
 # Video Trimmer Batch Script
 
-This batch script trims the last 3 minutes from all `.mp4` videos in the folder where the script is located and saves the trimmed videos to a subdirectory called `output_dir`.
+This batch script trims a user-defined amount of time from the end of all `.mp4` videos in the folder where the script is located and saves the trimmed videos to a subdirectory called `output_dir`.
+
+## Features
+- Allows the user to input the trim time in the format `hh:mm:ss`, `mm:ss`, or `ss`.
+- Automatically adds a minus sign to the user’s input to trim from the end of the video.
+- If `ffmpeg.exe` is not found in the script’s directory, it will attempt to use `ffmpeg` from the system’s `PATH`.
 
 ## Usage
 
 ### Method 1
 
 1. Place the batch script in the folder containing the `.mp4` videos you want to process.
-2. Run the script. It will create an `output_dir` subdirectory if it does not already exist.
-3. The script will process each `.mp4` video, trimming the last 3 minutes, and save the trimmed videos to the `output_dir`.
+2. Run the script. It will prompt you to enter the amount of time to trim from the end of each video in the format `hh:mm:ss`, `mm:ss`, or `ss`. 
+   - Example: `07:07` is 7 minutes and 7 seconds, `07:07:07` is 7 hours, 7 minutes, and 7 seconds.
+3. The script will create an `output_dir` subdirectory if it does not already exist.
+4. It will process each `.mp4` video, trim the specified amount of time from the end, and save the trimmed videos to the `output_dir`.
 
-**Make sure that the path to `ffmpeg` is added to the PATH environment variable.**
+**Note:** If `ffmpeg` is not located in the same directory as the script, make sure that the path to `ffmpeg` is added to the system `PATH` environment variable.
 
 ### Method 2
 
-The easiest way is to get the [batch-lossless-cut.zip](https://github.com/m1nuzz/batch-lossless-cut/releases/download/batch-lossless-cut/batch-lossless-cut.zip) extract the files into the folder with the videos you want to trim, and run `batch-lossless-cut.bat`
+The easiest way is to download the [batch-lossless-cut.zip](https://github.com/m1nuzz/batch-lossless-cut/releases/download/batch-lossless-cut/batch-lossless-cut.zip), extract the files into the folder with the videos you want to trim, and run `batch-lossless-cut.bat`.
+
+## Requirements
+
+- [FFmpeg](https://ffmpeg.org/) must be installed or included in the same directory as the script, or it should be available in the system `PATH`.
